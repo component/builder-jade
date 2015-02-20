@@ -50,7 +50,7 @@ exports = module.exports = function (options) {
       try {
         res =
         cache[hash] = cache[hash]
-          || Jade.compileClient(string, opts);
+          || Jade.compile(string, opts);
       } catch (err) {
         done(err);
         return;
